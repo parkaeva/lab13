@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    int n, d, k, A;
+    cin>>n>>A>>d;
+    int *a=new int[n];
+    k=0;
+    for(int i=1; i<n; i++)
+    {
+        while (k<n)
+        {
+            a[i]=A*pow(d, k);
+            k+=1;
+            cout<<a[i]<<" ";
+        }
+        
+    }
+    return 0;
+}
